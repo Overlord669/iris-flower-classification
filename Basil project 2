@@ -65,13 +65,40 @@ The dataset contains:
 
 ## Model Evaluation
 
-The model was evaluated using the following metrics:
 
-- Accuracy Score
-- Confusion Matrix
-- Precision
-- Recall
-- F1-score
+## Model Evaluation and Performance
+
+The K-Nearest Neighbors (KNN) model was evaluated using a test dataset of 30 samples.
+
+### Accuracy
+
+The model achieved an accuracy of **93.33%**.
+
+### Confusion Matrix
+
+| Actual / Predicted | Setosa | Versicolor | Virginica |
+|---|---:|---:|---:|
+| Setosa | 10 | 0 | 0 |
+| Versicolor | 0 | 10 | 0 |
+| Virginica | 0 | 2 | 8 |
+
+### Classification Report
+
+| Class | Precision | Recall | F1-score |
+|---|---:|---:|---:|
+| Setosa | 1.00 | 1.00 | 1.00 |
+| Versicolor | 0.83 | 1.00 | 0.91 |
+| Virginica | 1.00 | 0.80 | 0.89 |
+
+### Performance Interpretation
+
+The model correctly classified 28 out of 30 test samples.
+
+It achieved perfect classification of Iris-setosa and correctly identified all Iris-versicolor samples.
+
+However, two Iris-virginica samples were misclassified as Iris-versicolor.
+
+Overall, the model demonstrated strong classification performance with an accuracy of 93.33%.
 
 ## Model Prediction
 
