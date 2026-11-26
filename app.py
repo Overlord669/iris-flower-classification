@@ -1,16 +1,15 @@
 
 import streamlit as st
 import numpy as np
-import pickle
+import joblib
 import os
 from sklearn.datasets import load_iris
 
 # Load trained model and scaler
 with open("iris_knn_model.pkl", "rb") as file:
-    model = pickle.load(file)
-
+    model = joblib.load("iris_knn_model.pkl")
 with open("iris_scaler.pkl", "rb") as file:
-    scaler = pickle.load(file)
+    scaler = joblib.load("iris_scaler.pkl")
 
 iris = load_iris()
 
