@@ -80,10 +80,10 @@ if st.button("Predict Flower Species", type="primary"):
 
     # Display flower image
     image_files = {
-        "setosa": "setosa.jpg",
-        "versicolor": "versicolor.jpg",
-        "virginica": "virginica.jpg"
-    }
+    "setosa": "iris_setosa.jpg",
+    "versicolor": "iris_versicolor.jpg",
+    "virginica": "iris_virginica.jpg"
+}
 
     if species in image_files:
         image_path = os.path.join(
