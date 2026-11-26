@@ -1,5 +1,8 @@
 # Iris Flower Classification Using K-Nearest Neighbors (KNN)
 https://iris-flower-classification-tctvdjfgohrwsybbrer7l2.streamlit.app/
+## Application Preview
+
+![Iris Flower Classification App](iris_app_screenshot.png)
 
 ## Project Overview
 
